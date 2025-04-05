@@ -68,3 +68,54 @@ int main() {
     int add = num1 + num2;
     printf("Addition of %d and %d is %d",num1,num2,add);
 }
+
+//05/04/25
+//Arithmetic Operators
+
+#include <stdio.h>
+int main() {
+    //Operators
+    //1.Arithmetic Operators
+    // + , - , / , * , %
+    
+    printf("%d\n",10+20);
+    printf("%d\n",20-10);
+    printf("%d\n",20/10);
+    printf("%d\n",20*10);
+    printf("%d\n",20%3);
+}
+
+//Comparison Operators
+// > , < , >= , <= , == , !=
+
+#include <stdio.h>
+int main() {
+    int a = 10;
+    int b = 20;
+    
+    // True - 1 , False - 0
+    
+    printf("%d\n",a>b); //0
+    printf("%d\n",a<b); //1
+    printf("%d\n",a>=b);//0
+    printf("%d\n",a<=b);//1
+    printf("%d\n",a==b);//0
+    printf("%d\n",a!=b);//1
+}
+
+//Logical Operators
+// && - and , || - or , ! - not
+#include <stdio.h>
+int main() {
+    // && , || , !
+    
+    int a = 10;
+    int b = 20;
+    int c = 30;
+    int d = 40;
+    
+    printf("%d\n", a<b && c<d ); //1
+    printf("%d\n", a<b && c>d ); //0
+    printf("%d\n", a<b || c>d ); //1
+    printf("%d\n", !(c<d) ); //0
+}
