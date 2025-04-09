@@ -119,3 +119,60 @@ int main() {
     printf("%d\n", a<b || c>d ); //1
     printf("%d\n", !(c<d) ); //0
 }
+
+//Constants
+#include <stdio.h>
+int main() {
+    const float pi = 3.14159; // Constant variable
+    printf("%f",pi)
+}
+
+//Control Statements
+//if/else
+
+
+//if/else if/else
+#include <stdio.h>
+int main() {
+    // if/else if/else
+    int age;
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    
+    if(age>=60){
+        printf("Ticket Price = Rs.600");
+    }
+    else if(age>=18){
+        printf("Ticket Price = Rs.400");
+    }
+    else{
+        printf("Ticket Price = Rs.200");
+    }
+}
+
+//Nested if/else
+#include <stdio.h>
+int main() {
+    // if/else if/else
+    int age;
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    
+    if(age>=60){
+        printf("Ticket Price = Rs.600");
+    }
+    else if(age>=18){
+        int h;
+        printf("Enter your height : ");
+        scanf("%d",&h);
+        if(h>=5){
+            printf("Ticket Price = Rs.500");
+        }
+        else{
+            printf("Ticket Price = Rs.400");
+        }
+    }
+    else{
+        printf("Ticket Price = Rs.200");
+    }
+}
