@@ -366,3 +366,32 @@ int main() {
     addNumbers(num1, num2);
     return 0;
 }
+
+//Recursion
+#include <stdio.h>
+
+int sum(int n){
+    if(n>0){
+        return n + sum(n-1);
+    }
+    else{
+        return 0;
+    }
+}
+
+int main() {
+    int result = sum(100);
+    
+    printf("%d",result);
+}
+
+//Math Functions
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+    printf("%f\n",sqrt(16));
+    printf("%f\n",ceil(1.4));
+    printf("%f\n",floor(1.9));
+    printf("%f\n",pow(4,3));
+}
