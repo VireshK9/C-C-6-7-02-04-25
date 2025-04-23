@@ -395,3 +395,44 @@ int main() {
     printf("%f\n",floor(1.9));
     printf("%f\n",pow(4,3));
 }
+
+//Structure
+
+#include <stdio.h>
+#include<string.h>
+struct Student{
+  int id;
+  char name[10];
+  char grade;
+};
+
+int main() {
+    //created an structure variable from Student s1
+    struct Student s1;
+    
+    //Assign values to the members of s1
+    s1.id = 1;
+    strcpy(s1.name,"Omkar");
+    s1.grade = 'A';
+    
+    printf("Id : %d\n",s1.id);
+    printf("Name : %s\n",s1.name);
+    printf("Grade : %c\n",s1.grade);
+}
+
+//Assigning values to structure members using simple syntax
+#include <stdio.h>
+
+struct Student{
+  int id;
+  char name[10];
+  char grade;
+};
+
+int main() {
+    struct Student s1 = {1,"Omkar",'A'};
+    
+    printf("Id : %d\n",s1.id);
+    printf("Name : %s\n",s1.name);
+    printf("Grade : %c\n",s1.grade);
+}
